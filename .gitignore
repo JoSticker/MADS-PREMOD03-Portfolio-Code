@@ -1,0 +1,5 @@
+data/processed/*
+!data/processed/.gitkeep
+
+reports/figures/*
+!reports/figures/.gitkeep

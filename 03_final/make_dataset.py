@@ -2,8 +2,8 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
-RAW_FILE = ROOT / "data" / "raw" / "bank-additional-full.csv"
-OUT_FILE = ROOT / "data" / "processed" / "dataset_clean.parquet"
+RAW_FILE = ROOT / "01_data" / "raw" / "bank-additional-full.csv"
+OUT_FILE = ROOT / "01_data" / "processed" / "dataset_clean.parquet"
 
 
 

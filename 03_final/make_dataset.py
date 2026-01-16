@@ -42,6 +42,10 @@ print(
     f"y_unique={y_unique}"
 )
 
+    # Drop leakage-prone features (post-event)
+    if "duration" in df.columns:
+        df = df.drop(columns=["duration"])
+
 
     # Save processed dataset (make sure map exists)
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
